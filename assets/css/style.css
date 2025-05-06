@@ -15,6 +15,7 @@
 body {
     font-size: 16px;
     font-family: "Roboto", sans-serif;
+    background-color: #fff;
 }
 
 .container {
@@ -112,7 +113,7 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-family: "Poppins", sans-serif;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 500;
     position: relative;
 }
@@ -347,11 +348,12 @@ nav ul li:hover a::after {
 
 /* Status Section start */
 #status {
-    background: linear-gradient(#0077ff77, #0077ff9a), url('../images/stats-bg.jpg');
+    background: linear-gradient(rgba(0, 119, 255, .7), rgba(0, 119, 255, .7)), url('../images/stats-bg.jpg');
     height: 390px;
     background-size: cover;
     background-position: top center;
     margin-bottom: 40px;
+    background-attachment: fixed;
 }
 
 .statusBox {
@@ -373,3 +375,60 @@ nav ul li:hover a::after {
 }
 
 /* Status Section end */
+
+/* Portfolio section start */
+
+.portfolioBox {
+    width: 100%;
+    position: relative;
+    transition: .3s;
+
+}
+
+.portfolioBox:hover .bottomPortfolioContainer {
+    visibility: visible;
+}
+
+.portfolioImg img {
+    width: 100%;
+}
+
+.bottomPortfolioContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fafafeea;
+    position: absolute;
+    bottom: 50px;
+    left: 44%;
+    transform: translateX(-50%);
+    width: 300px;
+    margin-left: 20px;
+    padding: 10px;
+    visibility: hidden;
+}
+
+.bottomLeft h3 {
+    font-size: 18px;
+}
+
+.bottomLeft p {
+    font-size: 14px;
+}
+
+.bottomRight {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bottomRight i {
+    font-size: 18px;
+    margin-left: 7px;
+    transition: .3s;
+}
+
+.bottomRight i:hover {
+    color: #0078FF;
+}
+
+/* Portfolio section end */

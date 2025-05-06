@@ -46,6 +46,14 @@
         font-size: 48px;
     }
 
+    /* Profile section start */
+    .innerPortfolio {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+
 }
 
 /* tablet device breakpoint */
@@ -111,4 +119,13 @@
         flex-direction: column;
         margin-top: 70px;
     }
+
+    /* Profile section start */
+    .innerPortfolio {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+
 }
