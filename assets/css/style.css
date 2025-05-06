@@ -1,0 +1,375 @@
+/* google fonts cdn */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
+
+/* font-family: "Roboto", sans-serif; */
+/* font-family: "Raleway", sans-serif; */
+/* font-family: "Poppins", sans-serif; */
+
+/* Common css styles  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0px 15px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+section {
+    padding: 60px 0px;
+}
+
+.sectionTitle {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.sectionTitle::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #0078FF;
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sectionSubTitle {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(78, 78, 78);
+    margin: 40px 0px;
+}
+
+/* Header section start */
+#header {
+    background-color: rgb(0, 0, 0);
+    padding: 20px 0px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.innerHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.logo a {
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+    font-weight: 700;
+}
+
+nav {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+
+}
+
+.menu_bar {
+    border: none;
+    outline: none;
+}
+
+.menu_bar i {
+    font-size: 25px;
+    /* background-color: transparent; */
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0px 15px;
+
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: "";
+    display: inline-block;
+    width: 0%;
+    height: 2px;
+    background-color: #ffff;
+    position: absolute;
+    top: 27px;
+    left: 0;
+    transition: .2s;
+}
+
+nav ul li:hover a::after {
+    width: 100%;
+}
+
+.activeNave::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 27px;
+    left: 0;
+
+}
+
+/* Header section end */
+
+/* Banner section start */
+#banner {
+    min-height: calc(100vh - 75px);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/hero-img.jpg');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+.bannerTitle {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.bannerSubTitle {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 15px 0px;
+    color: rgb(255, 255, 255);
+}
+
+/* Banner section end */
+
+/* About section start  */
+#about {
+    background-color: #fff;
+}
+
+.innerAbout {
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 64px;
+}
+
+.aboutLeftInfos {
+    flex-basis: 100%;
+
+}
+
+.aboutRightInfos {
+    flex-basis: 100%;
+}
+
+.avatar {
+    width: 150px;
+    height: auto;
+    overflow: hidden;
+
+}
+
+.avatar img {
+    width: 100%;
+    border-radius: 7px;
+}
+
+.avatarContacts li {
+    list-style: none;
+    margin: 15px 0px;
+    color: rgb(78, 78, 78);
+}
+
+.avatarContacts span {
+    font-weight: bold;
+}
+
+.skils .skilsRange {
+    width: 100%;
+    height: 10px;
+    background-color: #EDEDED;
+    position: relative;
+}
+
+.skilsContainer h4 {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    margin: 15px 0px;
+}
+
+.topicContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.topicContainer p {
+    font-size: 13px;
+    font-weight: 600;
+    font-family: "Raleway", sans-serif;
+    margin: 22px 0px;
+    text-transform: uppercase;
+    color: rgb(78, 78, 78);
+}
+
+
+.skils .skilsRange::after {
+    content: "";
+    width: 50%;
+    height: 10px;
+    background-color: #0078FF;
+    position: absolute;
+    left: 0;
+    top: 0px;
+}
+
+.skils.html .skilsRange::after {
+    width: 90%;
+}
+
+.skils.css .skilsRange::after {
+    width: 70%;
+}
+
+.skils.js .skilsRange::after {
+    width: 50%;
+}
+
+.skils.photo .skilsRange::after {
+    width: 40%;
+}
+
+.aboutmeTitle {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    position: relative;
+    font-family: "Raleway", sans-serif;
+}
+
+.aboutmeTitle::after {
+    content: "";
+    width: 70px;
+    height: 3px;
+    background-color: #0078FF;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    display: block;
+}
+
+.aboutRightInfos p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    margin: 16px 0px;
+    white-space: inherit;
+    color: rgb(78, 78, 78);
+}
+
+/* About section end  */
+
+/* Service section start */
+.serviceBox {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 60px 30px;
+    margin: 20px 0px;
+    border-radius: 10px;
+    transition: 1s;
+    overflow: hidden;
+}
+
+
+
+.serviceIcon {
+    background-color: #0078FF;
+    color: #fff;
+    width: 65px;
+    height: 65px;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.serviceTitle {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 15px 0px 10px 0px;
+}
+
+.servicePera {
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 0;
+    color: rgb(78, 78, 78);
+}
+
+/* Service section end */
+
+/* Status Section start */
+#status {
+    background: linear-gradient(#0077ff77, #0077ff9a), url('../images/stats-bg.jpg');
+    height: 390px;
+    background-size: cover;
+    background-position: top center;
+    margin-bottom: 40px;
+}
+
+.statusBox {
+    text-align: center;
+}
+
+.statusTitle {
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+    margin: 10px 0px;
+}
+
+.statusSubTitle {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffffa1;
+    font-family: "Raleway", sans-serif;
+}
+
+/* Status Section end */

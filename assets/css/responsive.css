@@ -1,0 +1,114 @@
+/* mobile Device breakpoint  */
+@media screen and (min-width: 768px) {
+
+    .bannerTitle {
+        font-size: 64px;
+        font-weight: 700;
+    }
+
+    .bannerSubTitle {
+        font-size: 36px;
+        font-weight: 600;
+    }
+
+    .skilsContainer h4 {
+        font-size: 20px;
+
+    }
+
+    /* Service section  */
+    #service {
+        margin: 30px 0px;
+    }
+
+    .innerService {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+
+    .serviceBox {
+        margin: 0px 0px;
+    }
+
+    /* status section  */
+    .statusInner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+        row-gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .statusTitle {
+        font-size: 48px;
+    }
+
+}
+
+/* tablet device breakpoint */
+@media screen and (min-width:1024px) {
+    nav {
+        display: block;
+    }
+
+    .menu_bar {
+        display: none;
+    }
+
+    .bannerTitle {
+        font-size: 64px;
+        font-weight: 700;
+    }
+
+    .bannerSubTitle {
+        font-size: 36px;
+        font-weight: 600;
+    }
+
+    /* About section  */
+    .innerAbout {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 20px;
+    }
+
+    .avatarContainer {
+        display: flex;
+        justify-content: flex-start;
+        column-gap: 50px;
+
+    }
+
+    .aboutmeTitle {
+        margin-top: 0px;
+    }
+
+    /* service section  */
+    .innerService {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+
+    .serviceBox {
+        margin: 0px 0px;
+    }
+
+    /* status section */
+
+    .statusInner {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .statusBox {
+        display: flex;
+        flex-direction: column;
+        margin-top: 70px;
+    }
+}
