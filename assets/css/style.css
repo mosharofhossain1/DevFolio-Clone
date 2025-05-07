@@ -462,7 +462,7 @@ nav ul li:hover a::after {
 
 /* frequently Section start */
 #prequently {
-    background-color: #F1F1F1;
+    background-color: #fff;
 }
 
 .freequentlyRightContent {
@@ -470,7 +470,7 @@ nav ul li:hover a::after {
 }
 
 .frequentlyTitle {
-    font-size: 15px;
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
@@ -490,7 +490,7 @@ nav ul li:hover a::after {
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
-
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .frequentlyItem .num {
@@ -509,3 +509,215 @@ nav ul li:hover a::after {
 }
 
 /* frequently Section end */
+
+/* feedback section start */
+#feedback {
+    background-image: linear-gradient(rgba(0, 120, 255, .7), rgba(0, 120, 255, .7)), url('../images/testimonials-bg.jpg');
+    padding: 80px 0px;
+    background-size: cover;
+    background-position: left center;
+}
+
+.fedbackImg {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #4F96E8;
+}
+
+.feedbackinner {
+    text-align: center;
+}
+
+
+.fedName {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0px;
+    color: #fff;
+}
+
+.fedPosition {
+    font-size: 18px;
+    color: #e2d4d4;
+    margin-bottom: 10px;
+}
+
+.feedbackRatting {
+    font-size: 15px;
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.fedDesc {
+    font-style: italic;
+    color: #fff;
+    font-size: 15px;
+    /* width: 700px; */
+    margin: 0px auto;
+}
+
+.fedDesc::before {
+    content: "\f10d";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-right: 8px;
+    font-size: 22px;
+}
+
+.fedDesc::after {
+    content: "\f10e";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-right: 8px;
+    font-size: 22px;
+}
+
+/* feedback section end */
+
+
+/* Contact section start */
+.innerContact {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px;
+}
+
+.innerDetails {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    margin-top: 20px;
+}
+
+.locationIcon {
+    font-size: 20px;
+    height: 56px;
+    width: 56px;
+    color: #0078FF;
+    line-height: 56px;
+    border: 1px solid #0078FF;
+    text-align: center;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+.locationIcon:hover {
+    background-color: #0078FF;
+    color: #fff;
+}
+
+.addressTitle {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-family: "Raleway", sans-serif;
+}
+
+.addressDesc {
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+}
+
+
+.formSection {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-top: 40px;
+    padding: 20px 25px;
+}
+
+.topInput input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+.subjectInput input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+.textAreadiv textarea {
+    width: 100%;
+    height: 150px;
+    outline: none;
+    padding: 10px;
+}
+
+.topInput input:focus {
+    border: 1px solid #0078FF;
+
+}
+
+.subjectInput input:focus {
+    border: 1px solid #0078FF;
+}
+
+.textAreadiv textarea:focus {
+    border: 1px solid #0078FF;
+}
+
+.messageSendBtn {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sendBtn {
+    padding: 10px 15px;
+    border-radius: 25px;
+    background-color: #0078FF;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* Contact section end */
+
+/* Footer section  */
+#footer {
+    background-color: #0078FF;
+    padding: 50px 40px;
+}
+
+.footterContents {
+    text-align: center;
+}
+
+.footterContents p {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footerSocial {
+    margin-bottom: 10px;
+}
+
+.footerSocial i {
+    font-size: 18px;
+    border: 1px solid #ffffffb6;
+    /* padding: 10px; */
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    color: #ffffffb6;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.footerSocial i:hover {
+    color: #fff;
+}
+
+.footterContents span {
+    color: #fff;
+    font-size: 12px;
+}

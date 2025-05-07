@@ -67,6 +67,10 @@
         line-height: 28px;
     }
 
+    /* feedback section  */
+
+    /* Contact section  */
+
 }
 
 /* tablet device breakpoint */
@@ -178,5 +182,36 @@
 
     .frequentlyDesc {
         line-height: 28px;
+    }
+
+    /* feedback section  */
+
+
+    .fedName {
+        font-size: 25px;
+    }
+
+    .fedDesc {
+        font-size: 20px;
+    }
+
+    /* Contact section  */
+    .contactInfoContainer {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+
+    .topInput {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .topInput p {
+        width: 48%;
+    }
+
+    .subjectInput input {
+        width: 100%;
     }
 }
