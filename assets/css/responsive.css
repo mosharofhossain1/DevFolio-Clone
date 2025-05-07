@@ -59,6 +59,14 @@
         justify-content: space-around;
     }
 
+    .frequentlyTitle {
+        font-size: 34px;
+    }
+
+    .frequentlyDesc {
+        line-height: 28px;
+    }
+
 }
 
 /* tablet device breakpoint */
@@ -151,5 +159,24 @@
 
     .pricingName {
         font-size: 20px;
+    }
+
+    /* Frequently section start */
+    .innerFrequently {
+        display: flex;
+        column-gap: 20px;
+    }
+
+    .freequentlyLeftContent {
+        flex-basis: 35%;
+        margin-top: 53px;
+    }
+
+    .frequentlyTitle {
+        font-size: 34px;
+    }
+
+    .frequentlyDesc {
+        line-height: 28px;
     }
 }

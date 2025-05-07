@@ -434,6 +434,9 @@ nav ul li:hover a::after {
 /* Portfolio section end */
 
 /* Price section start */
+#pricing {
+    background-color: #fff;
+}
 
 .innerPricing {
     display: flex;
@@ -455,3 +458,54 @@ nav ul li:hover a::after {
 }
 
 /* Price section end */
+
+
+/* frequently Section start */
+#prequently {
+    background-color: #F1F1F1;
+}
+
+.freequentlyRightContent {
+    margin-top: 50px;
+}
+
+.frequentlyTitle {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.frequentlyTitle span {
+    font-weight: normal;
+}
+
+.frequentlyDesc {
+    font-size: 15px;
+    color: #4e4e4e;
+    margin-bottom: 15px;
+}
+
+.frequentlyItem {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.frequentlyItem .num {
+    color: #0078FF;
+}
+
+.innerTitle {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Raleway", sans-serif;
+    transition: .3s;
+}
+
+.innerTitle:hover {
+    color: #0078FF;
+}
+
+/* frequently Section end */
