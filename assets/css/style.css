@@ -432,3 +432,26 @@ nav ul li:hover a::after {
 }
 
 /* Portfolio section end */
+
+/* Price section start */
+
+.innerPricing {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricingName {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 20px;
+}
+
+.innerPricing h4 {
+    font-size: 18px;
+    color: #0078FF;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+}
+
+/* Price section end */

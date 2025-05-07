@@ -54,6 +54,11 @@
         row-gap: 10px;
     }
 
+    .innerPricing {
+        display: flex;
+        justify-content: space-around;
+    }
+
 }
 
 /* tablet device breakpoint */
@@ -128,4 +133,23 @@
         row-gap: 10px;
     }
 
+    /* pricing section  */
+
+    .innerPricingContainer {
+        display: flex;
+    }
+
+    .innerPricingContainer .pricingContents {
+        width: 50%;
+        margin-right: 5%;
+    }
+
+    .innerPricing {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .pricingName {
+        font-size: 20px;
+    }
 }
